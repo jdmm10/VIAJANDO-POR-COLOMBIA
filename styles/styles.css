@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+    list-style: none;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background-color:darkgoldenrod;
+  }
+  
+  #menuCont {
+    display: none;
+  }
+  
+  header {
+    padding: 20px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  header nav ul li {
+    display: flex;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  header nav ul li:hover {
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+  }
+  header nav ul li img {
+    margin-left: 5px;
+    height: 6px;
+    width: 10px;
+    align-self: center;
+  }
+  header nav #features-info, header nav #company-info {
+    background-color: white;
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-top: 15px;
+    justify-content: start;
+    transform: translatex(-40px);
+  }
+  header nav #features-info #features-list, header nav #company-info #features-list {
+    display: flex;
+    flex-direction: column !important;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+  }
+  header nav #features-info #features-list img, header nav #company-info #features-list img {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  header nav #company-info {
+    transform: translatex(5px);
+    padding: 20px;
+    color: black;
+  }
+  header nav #company-info #company-list {
+    display: flex;
+    flex-direction: column;
+  }
+  header .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  header .buttons button {
+    background-color: transparent;
+    border-style: none;
+  }
+  header .buttons button:hover {
+    font-weight: 800;
+    cursor: pointer;
+  }
+  header .buttons__register {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black !important;
+  }
+  header .menu {
+    display: none;
+  }
+  
+  .container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding-right: 60px;
+  }
+  .container__boton {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    height: 50px;
+    width: 160px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .container__boton:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  .container article {
+    padding-left: 150px;
+    margin-top: 128px;
+    width: 60%;
+    padding-right: 150px;
+  }
+  .container article ul {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+  }
+  .container article ul img {
+    width: 80px;
+  }
+  .container article h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    
+  }
+  .container article p {
+    margin-bottom: 50px;
+    color: black;
+    font-weight: 500;
+  }
+  .container__imagen {
+    background: url("../images/mapa-viaje-colombia-997895833\ \(1\)\ \(1\)\ -\ copia.png" );
+    background-size: cover;
+    width: 100%;
+  }
+  
+  @media (max-width: 700px) {
+    #menuCont {
+      width: 100%;
+      height: 180%;
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      justify-content: end;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.288);
+    }
+    #menuCont aside {
+      background-color: white;
+      width: 50%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    #menuCont aside ul {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    #menuCont aside li {
+      display: flex;
+      font-weight: 600;
+      font-size: 13px;
+      color: gray;
+      gap: 20px;
+    }
+    #menuCont aside li:hover {
+      font-weight: 900;
+      color: black;
+      cursor: pointer;
+    }
+    #menuCont aside div li img {
+      align-self: center;
+    }
+    #menuCont aside div article {
+      padding: 20px;
+    }
+    #menuCont aside article {
+      display: none;
+    }
+    #menuCont aside img {
+      align-self: flex-end;
+    }
+    #menuCont aside figure {
+      display: flex;
+      flex-direction: column;
+    }
+    #menuCont aside button {
+      background-color: transparent;
+      border-style: none;
+      width: 100%;
+      height: 40px;
+      color: gray;
+      padding: 5px;
+    }
+    #menuCont aside button:last-child {
+      border: 2px solid gray;
+      border-radius: 8px;
+    }
+    #menuCont aside button:hover {
+      font-weight: 800;
+      cursor: pointer;
+    }
+    header .selections {
+      display: none;
+    }
+    header .buttons {
+      display: none !important;
+    }
+    header .menu {
+      display: flex;
+      cursor: pointer;
+    }
+    .container {
+      flex-direction: column-reverse;
+      padding: 0px;
+      margin: 0px;
+    }
+    .container article {
+      width: 100%;
+      padding: 0px;
+      margin-top: 40px;
+      justify-content: center;
+      text-align: center;
+    }
+    .container__imagen {
+      background: url("../images/mapa-viaje-colombia-997895833\ \(1\)\ \(1\)\ -\ copia.png");
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+    }
+  }
+  @media (max-width: 700px) and (max-width: 450px) {
+    .container ul {
+      flex-direction: column;
+    }
+  }
+  
